@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,900;1,100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div id="content">
+        <h1 id="title">Encuesta</h1>
+        <p id="description">Servicios que te gustaría recibir para tus mascotas.</p>
+        <form id="survey-form" action="#">
+           <label id="name-label" for="name"><input id="name" type="text" placeholder="Ingresa tu nombre">Nombre</label> 
+           <br>
+           <label id="email-label" for="email"><input id="email" type="email" placeholder="Ingresa tu correo">Correo Electrónico</label> 
+           <br>
+           <label id="number-label" for="number"><input id="number" type="number" placeholder="Ingresa tu edad">Edad</label> 
+           <br>
+           <p>¿Tienes mascotas?</p>
+           <label for="yes"><input type="radio" id="yes" name="yes-no">Sí</label>
+           <br>
+           <label for="no"><input type="radio" id="no" name="yes-no">No</label>
+           <br>
+           <p>¿Qué tipo de mascota tienes?</p>
+           <select name="dropdown" id="dropdown">
+               <option value="">Perro</option>
+               <option value="">Gato</option>
+               <option value="">Pájaro</option>
+               <option value="">Peces</option>
+               <option value="">Tortuga</option>
+               <option value="">Hamster</option>
+               <option value="">Otro</option>
+           </select>
+           <br>
+           <p>¿De estos servicios a domicilio para tus mascotas cuales usarías? (Selecciona todos los que quieras)</p>
+           <label for="cb1"><input type="checkbox" id="cb1" name="services" value="cb1">Peluquería.</label>
+           <br>
+           <label for="cb2"><input type="checkbox" id="cb2" name="services" value="cb2">Revisión veterinaria.</label>
+           <br>
+           <label for="cb3"><input type="checkbox" id="cb3" name="services" value="cb3">Limpieza dental.</label>
+           <br>
+           <label for="cb4"><input type="checkbox" id="cb4" name="services" value="cb4">Limpieza del espacio de la mascota.</label>
+           <br>
+           <label for="cb5"><input type="checkbox" id="cb5" name="services" value="cb5">Sacar a pasear la mascota.</label>
+           <br>
+           <label for="cb6"><input type="checkbox" id="cb6" name="services" value="cb6">Vacunación.</label>
+           <br>
+           <p>Si tienes alguna sugerencia de otro servicio que te gustaría que te prestáramos, escríbela aquí:</p>
+           <br>
+           <textarea name="submit" id="submit" cols="90" rows="10"></textarea>
+           <br>
+           <button id="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
