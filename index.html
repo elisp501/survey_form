@@ -17,28 +17,53 @@
            
             <div>
                <div>
-                  <label id="name-label" for="name" class="survey-text">Nombre</label>  
+                  <label 
+                  id="name-label" 
+                  for="name" 
+                  class="survey-text">Nombre</label>  
                </div>
                <div>
-                   <input id="name" type="text" placeholder="Ingresa tu nombre">
+                   <input 
+                   id="name" 
+                   type="text" 
+                   placeholder="Ingresa tu nombre y apellidos"
+                   pattern="[A-Za-z ]{1,30}"
+                   title="Write only letters"
+                   >
                </div>
             </div>
             
             <div>
                 <div>
-                    <label id="email-label" for="email" class="survey-text">Correo Electrónico</label>  
+                    <label 
+                    id="email-label" 
+                    for="email" 
+                    class="survey-text">Correo Electrónico</label>  
                 </div>
                 <div>
-                    <input id="email" type="email" placeholder="Ingresa tu correo">
+                    <input 
+                    id="email" 
+                    type="email" 
+                    placeholder="Ingresa tu correo"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                 </div>
              </div>
 
              <div>
                 <div>
-                    <label id="number-label" for="number" class="survey-text">Edad</label> 
+                    <label 
+                    id="number-label" 
+                    for="number" 
+                    class="survey-text">Edad</label> 
                 </div>
                 <div>
-                    <input id="number" type="number" placeholder="Ingresa tu edad">
+                    <input 
+                    id="number" 
+                    type="text" 
+                    placeholder="Ingresa tu edad"
+                    pattern="[1-99]{1,2}";
+                    title="Write only numbers between 1 and 99"
+                    >
                 </div>
              </div>
             
@@ -47,7 +72,11 @@
                     <p class="survey-text">¿Tienes mascotas?</p>
                 </div>
                 <div>
-                    <label for="yes"><input type="radio" id="yes" name="yes-no">Sí</label>
+                    <label for="yes">
+                    <input 
+                    type="radio" 
+                    id="yes" 
+                    name="yes-no">Sí</label>
                 </div>
                 <div>
                     <label for="no"><input type="radio" id="no" name="yes-no">No</label>
@@ -74,7 +103,8 @@
            
            <div>
                 <div>
-                    <p class="survey-text">¿De estos servicios a domicilio para tus mascotas cuales usarías? (Selecciona todos los que quieras)</p>
+                    <p class="survey-text">¿De estos servicios a domicilio para tus mascotas cuales usarías? </p>
+                    <small>(Selecciona todos los que quieras)</small>
                 </div>    
                 <div>   
                     <label for="cb1"><input type="checkbox" id="cb1" name="services" value="cb1">Peluquería.</label>
