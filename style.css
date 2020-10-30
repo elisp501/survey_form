@@ -1,5 +1,8 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    margin-bottom: 10px;
+
 }
 
 body{
@@ -31,7 +34,7 @@ body{
     text-align: center;
     margin: 0;
     padding: 0;
-    
+    color: black;
 }
 
 #description{
@@ -40,8 +43,51 @@ body{
     text-align: center;
     margin-top: -20px;
     padding: 0;
+    color: black;
 }
 
-#name-label{
-    
+#name{
+    width: 800px;
+    height: 40px;
+    border-radius: 5px;
+    border-width: 0px;
+}
+
+.survey-text{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+#email{
+    width: 800px;
+    height: 40px;
+    border-radius: 5px;
+    border-width: 0px;
+}
+
+#number{
+    width: 800px;
+    height: 40px;
+    border-radius: 5px;
+    border-width: 0px;
+}
+
+#dropdown{
+    width: 400px;
+    height: 40px;
+    border-width: 0px;
+}
+
+#textarea{
+    border-width: 0px;
+}
+
+#submit{
+    width: 830px;
+    padding: 10px;
+    border-radius: 3px;
+    border-width: 0px;
+    background-color: rgb(226, 85, 96);
+    color: white;
 }
